@@ -4,6 +4,8 @@ Log slimming tool
 
 Python 3.6+
 
+###Windows
+
 1、筛选出UDSAgent.log包含Job_0044497的行
 
 .\Logthin.exe -l UDSAgent.log -k Job_0044497
@@ -34,9 +36,13 @@ including =  ORA-,RMAN-
 
 -i -e 参数可以多个，用逗号分隔
 
-Linux：
+
+
+###Linux：
 
  python3 Logthin.py -l UDSAgent.log -k Job_0491768
+
+
 
 
 ## 好用的DBA系列，喜欢的请打颗星：
