@@ -4,7 +4,7 @@ Log slimming tool
 
 Python 3.6+
 
-###Windows
+### Windows
 
 1、筛选出UDSAgent.log包含Job_0044497的行
 
@@ -38,7 +38,7 @@ including =  ORA-,RMAN-
 
 
 
-###Linux：
+### Linux：
 
  python3 Logthin.py -l UDSAgent.log -k Job_0491768
 
