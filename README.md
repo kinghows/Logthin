@@ -1,25 +1,35 @@
 # Logthin
+
 Log slimming tool
 
 Python 3.6+
 
 1、筛选出UDSAgent.log包含Job_0044497的行
+
 .\Logthin.exe -l UDSAgent.log -k Job_0044497
 
 2、筛选出udppm.log包含Job_0045069,而且包含fingerprint或Closing vdisk 的行 
+
 .\Logthin.exe -l udppm.log -k Job_0045069  -i fingerprint,Closing vdisk
 
 3、筛选出udppm.log包含Job_0045069,而且包含fingerprint 但不包含Periodic 的行
+
 .\Logthin.exe -l udppm.log -k Job_0045069  -i fingerprint -e Periodic
 
 4、筛选出udppm.log 包含fingerprint的行 
+
 .\Logthin.exe -l udppm.log -i fingerprint
 
 注意：
+
 -i -e 参数可以写入执行文件同目录Logthin.ini，格式如下
+
 [set]
+
 including =  ORA-,RMAN-
+
 #excluding = 
+
 #including =  ORA-
 
 -i -e 参数可以多个，用逗号分隔
@@ -27,6 +37,7 @@ including =  ORA-,RMAN-
 Linux：
 
  python3 Logthin.py -l UDSAgent.log -k Job_0491768
+
 
 ## 好用的DBA系列，喜欢的请打颗星：
 
