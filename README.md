@@ -36,6 +36,7 @@ including =  ORA-,RMAN-
 
 -i -e 参数可以多个，用逗号分隔
 
+如果是特殊符号可以加引号： -e '#'
 
 
 ### Linux：
