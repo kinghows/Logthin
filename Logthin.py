@@ -20,7 +20,7 @@ def get_thinlogName(filename):
 
 if __name__=="__main__":
     config_file="Logthin.ini"
-    key = " "
+    key = ""
     including =[]
     excluding =[]
 
@@ -38,7 +38,8 @@ if __name__=="__main__":
     if len(including)==0 and len(excluding)==0 and os.path.exists(config_file):
         v =''
         config = configparser.ConfigParser()
-        config.read(config_file,encoding="utf-8-sig")
+        #config.read(config_file,encoding="utf-8-sig")
+        config.read(config_file)
         try:
             v=config.get("set","including")
         except:
